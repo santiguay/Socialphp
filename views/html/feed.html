@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>feed</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+    #nuevoPost {
+      background-color: #3498db;
+      border: 1px solid #2980b9;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: black;
+    }
+    #contenido {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #2ecc71;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #27ae60;
+    }
+
+    .post {
+      margin-bottom: 20px;
+    }
+
+    .post h3 {
+      color: #3498db;
+    }
+
+    .post p {
+      color: #555;
+    }
+  </style>
+  <title>Foro</title>
+</head>
+<body>
+
+  <div id="nuevoPost">
+    <h2>Nuevo Post</h2>
+    <form action="../model/feed.php" method="post">
+      
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      <br>
+      <input type="submit" value="Publicar">
+    </form>
+  </div>
+  <div id="contenido">
+    <h2>Contenido del Foro</h2>
+    <div class="post">
+      <h3>Título del Post 1</h3>
+      <p>Contenido del post...</p>
+    </div>
+    <div class="post">
+      <h3>Título del Post 2</h3>
+      <p>Contenido del post...</p>
+    </div>
+  </div>
+</body>
+</html>
