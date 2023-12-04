@@ -7,7 +7,7 @@ if (isset($_SESSION['user_id'])) {
     // Obtener el id del usuario de la variable de sesión
     $user_id = $_SESSION['user_id'];
     // Datos del formulario de nuevo post
-    $titulo = $_POST['titulo'];
+    
     $mensaje = $_POST['mensaje'];
     // Obtener el timestamp actual
     $timestamp = date('Y-m-d H:i:s');
